@@ -1,0 +1,58 @@
+/* Dropdown additions for the main menu. Add AFTER your existing stylesheet.
+   Only affects .has-sub / .sub; the existing header design is untouched.
+   Override --sub-bg / --sub-hover to match your menu bar colour exactly. */
+:root { --sub-bg: #00205b; --sub-hover: #0a3a8a; }
+
+#menu-list li.has-sub { position: relative; }
+#menu-list .plus { display: inline-block; margin-left: 4px; font-weight: 700; }
+
+#menu-list .sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--sub-bg);
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+  z-index: 1000;
+}
+#menu-list .sub li { display: block; width: 100%; position: relative; }
+#menu-list .sub a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+#menu-list .sub a:hover,
+#menu-list .sub a:focus { background: var(--sub-hover); }
+
+/* nested (Faculty) opens to the right */
+#menu-list .sub .sub { top: 0; left: 100%; }
+
+/* show on hover / keyboard focus / .open */
+#menu-list li.has-sub:hover > .sub,
+#menu-list li.has-sub:focus-within > .sub,
+#menu-list li.has-sub.open > .sub { display: block; }
+
+/* mobile: stack inside the menu instead of floating */
+@media (max-width: 900px) {
+  #menu-list .sub,
+  #menu-list .sub .sub {
+    position: static;
+    box-shadow: none;
+    min-width: 0;
+    background: rgba(0,0,0,.18);
+  }
+  #menu-list li.has-sub:hover > .sub,
+  #menu-list li.has-sub:focus-within > .sub { display: none; }
+  #menu-list li.has-sub.open > .sub { display: block; }
+  #menu-list .sub a { padding-left: 28px; }
+  #menu-list .sub .sub a { padding-left: 44px; }
+}
