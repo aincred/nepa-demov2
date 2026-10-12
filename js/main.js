@@ -5,6 +5,7 @@
   document.documentElement.classList.add('js');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+<<<<<<< HEAD
   /* ---------- Photos: try local file, then the nepa.gov.in copy, then a neutral placeholder ---------- */
   document.addEventListener('error', function (e) {
     var img = e.target;
@@ -25,6 +26,8 @@
     if (box) box.hidden = !open;
   });
 
+=======
+>>>>>>> d59a2cccf19ff82772abf7530a94c01fe63aee5c
   /* ---------- HEADER: collapsible menu ---------- */
   function initNav() {
     var nav = document.getElementById('site-nav');

@@ -228,6 +228,7 @@ window.NEPA_HI = {
  "Date": "दिनांक",
  "About the North Eastern Police Academy (NEPA), Umsaw, Ri-Bhoi District, Meghalaya: who we are, objectives and location. Ministry of Home Affairs, Government of India.": "पूर्वोत्तर पुलिस अकादमी, उमसॉ, री-भोई जिला, मेघालय के बारे में: हम कौन हैं, उद्देश्य और अवस्थिति। गृह मंत्रालय, भारत सरकार।",
  "Present Director and list of former Directors of the North Eastern Police Academy (NEPA), Umsaw, Meghalaya. Ministry of Home Affairs, Government of India.": "पूर्वोत्तर पुलिस अकादमी, उमसॉ, मेघालय के वर्तमान निदेशक और पूर्व निदेशकों की सूची। गृह मंत्रालय, भारत सरकार।",
+<<<<<<< HEAD
  "Awards and medals received by officers and staff of the North Eastern Police Academy (NEPA), Umsaw, Meghalaya. Ministry of Home Affairs, Government of India.": "पूर्वोत्तर पुलिस अकादमी, उमसॉ, मेघालय के अधिकारियों एवं कर्मचारियों को प्राप्त पुरस्कार एवं पदक। गृह मंत्रालय, भारत सरकार।",
  "Basic Course – North Eastern Police Academy": "बुनियादी पाठ्यक्रम – पूर्वोत्तर पुलिस अकादमी",
  "Basic Course at the North Eastern Police Academy (NEPA), Umsaw, Meghalaya: objectives, joining instructions, syllabus and Roll of Honour of all round best trainees. Ministry of Home Affairs, Government of India.": "पूर्वोत्तर पुलिस अकादमी (एनईपीए), उमसॉ, मेघालय में बुनियादी पाठ्यक्रम: उद्देश्य, कार्यग्रहण निर्देश, पाठ्यक्रम एवं सर्वांगीण सर्वश्रेष्ठ प्रशिक्षुओं की सम्मान सूची। गृह मंत्रालय, भारत सरकार।",
@@ -725,4 +726,7 @@ window.NEPA_HI = {
  "3 videos": "3 वीडियो",
  "Images – North Eastern Police Academy": "चित्र – पूर्वोत्तर पुलिस अकादमी",
  "Videos – North Eastern Police Academy": "वीडियो – पूर्वोत्तर पुलिस अकादमी",
+=======
+ "Awards and medals received by officers and staff of the North Eastern Police Academy (NEPA), Umsaw, Meghalaya. Ministry of Home Affairs, Government of India.": "पूर्वोत्तर पुलिस अकादमी, उमसॉ, मेघालय के अधिकारियों एवं कर्मचारियों को प्राप्त पुरस्कार एवं पदक। गृह मंत्रालय, भारत सरकार।"
+>>>>>>> d59a2cccf19ff82772abf7530a94c01fe63aee5c
 };

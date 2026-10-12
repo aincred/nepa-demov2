@@ -21,10 +21,13 @@
     [/^Training activity at North Eastern Police Academy, photo (\d+)$/, function (m) { return 'पूर्वोत्तर पुलिस अकादमी में प्रशिक्षण गतिविधि, चित्र ' + m[1]; }],
     [/^Call (.+)$/, function (m) { return m[1] + ' पर कॉल करें'; }],
     [/^Email (.+)$/, function (m) { return 'ईमेल ' + m[1]; }],
+<<<<<<< HEAD
     [/^Contact details of (.+)$/, function (m) { return HI[m[1]] ? HI[m[1]] + ' का संपर्क विवरण' : null; }],
     [/^about (.+)$/, function (m) { return HI[m[1]] ? HI[m[1]] + ' के बारे में' : null; }],
     [/^(\d+) items$/, function (m) { return m[1] + ' मद'; }],
     [/^(\d+(?:\.\d+)?) MB$/, function (m) { return m[1] + ' एमबी'; }],
+=======
+>>>>>>> d59a2cccf19ff82772abf7530a94c01fe63aee5c
     [/^(\d+) km$/, function (m) { return m[1] + ' कि.मी.'; }],
     [/^(\d+) yards$/, function (m) { return m[1] + ' गज'; }],
     [/^(\d+) recipients? listed$/, function (m) { return m[1] + ' प्राप्तकर्ता सूचीबद्ध'; }],
