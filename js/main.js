@@ -5,6 +5,26 @@
   document.documentElement.classList.add('js');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Photos: try local file, then the nepa.gov.in copy, then a neutral placeholder ---------- */
+  document.addEventListener('error', function (e) {
+    var img = e.target;
+    if (!img || img.tagName !== 'IMG') return;
+    var list = (img.getAttribute('data-fallback') || '').split(' ').filter(Boolean);
+    if (!list.length) return;
+    img.setAttribute('data-fallback', list.slice(1).join(' '));
+    img.src = list[0];
+  }, true);
+
+  /* ---------- Facilities: "See More" toggle ---------- */
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.fc-more');
+    if (!b) return;
+    var box = document.getElementById(b.getAttribute('aria-controls'));
+    var open = b.getAttribute('aria-expanded') !== 'true';
+    b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (box) box.hidden = !open;
+  });
+
   /* ---------- HEADER: collapsible menu ---------- */
   function initNav() {
     var nav = document.getElementById('site-nav');

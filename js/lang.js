@@ -24,6 +24,7 @@
     [/^Contact details of (.+)$/, function (m) { return HI[m[1]] ? HI[m[1]] + ' का संपर्क विवरण' : null; }],
     [/^about (.+)$/, function (m) { return HI[m[1]] ? HI[m[1]] + ' के बारे में' : null; }],
     [/^(\d+) items$/, function (m) { return m[1] + ' मद'; }],
+    [/^(\d+(?:\.\d+)?) MB$/, function (m) { return m[1] + ' एमबी'; }],
     [/^(\d+) km$/, function (m) { return m[1] + ' कि.मी.'; }],
     [/^(\d+) yards$/, function (m) { return m[1] + ' गज'; }],
     [/^(\d+) recipients? listed$/, function (m) { return m[1] + ' प्राप्तकर्ता सूचीबद्ध'; }],
